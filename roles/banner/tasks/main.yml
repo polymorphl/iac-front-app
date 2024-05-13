@@ -1,7 +1,7 @@
 ---
 # tasks file for roles/motd-banner
 - name: Install Figlet
-  apt:
+  ansible.builtin.package:
     name: "figlet"
     state: latest
   tags:
