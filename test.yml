@@ -1,3 +1,3 @@
 ---
 - name: "test"
-  cmd: echo "yo"
+  shell: echo "Hello from playbook task!"
