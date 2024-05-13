@@ -1,0 +1,3 @@
+---
+- name: "test"
+  cmd: echo "yo"
