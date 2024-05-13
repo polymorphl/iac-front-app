@@ -1,0 +1,9 @@
+- name: Setup Banner
+  hosts: webservers
+  become: yes
+  become_method: su
+  become_user: root
+  tasks:
+    - name: Play banner tasks
+      import_role:
+        name: banner
