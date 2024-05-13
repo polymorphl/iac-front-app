@@ -1,6 +1,5 @@
 - name: Setup Banner
   hosts: webservers
-  become: yes
   tasks:
     - name: Play banner tasks
       import_role:
