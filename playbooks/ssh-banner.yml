@@ -1,5 +1,8 @@
 - name: Setup Banner
   hosts: webservers
+  become: yes
+  become_method: su
+  become_user: user-ansible
   tasks:
     - name: Play banner tasks
       import_role:
