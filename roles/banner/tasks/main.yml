@@ -1,6 +1,7 @@
 ---
 # tasks file for roles/motd-banner
 - name: Install Figlet
+  become: yes
   become_method: sudo
   ansible.builtin.package:
     name: "figlet"
@@ -9,6 +10,7 @@
     - install_packages
   
 - name: Install Lolcat
+  become: yes
   become_method: sudo
   apt:
     name: "lolcat"
